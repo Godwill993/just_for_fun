@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Number Guessing Game</h2>
+    <p>Guess a number between 1 and 10</p>
+    <input type="number" id="guessInput" placeholder="Enter your guess">
+    <button id="clicker" onclick = "guess()"> GO</button>
+  <p id="dill"></p>
+
+
+    <script>
+        function guess() {
+           const unum = document.getElementById("guessInput").value; 
+           const num = Number(unum);
+              const randomNumber = Math.floor(Math.random() * 10) + 1;
+           if (num < 1 || num > 10) {
+            document.getElementById("dill").innerHTML = "out of the range bro choose between 1 and 10.";
+            //    alert("you are out of range bro choose between 1 and 10.");
+              } else if (num === randomNumber) {
+                document.getElementById("dill").innerHTML = "Congratulation you win";
+            //    alert("Congratulations yoi guessed the correct number");
+              } else {
+                document.getElementById("dill").innerHTML = "Sorry, that's not correct ";
+            //    alert("Sorry, that's not correct. The correct number was");
+    }
+        }
+
+            for (let atm = 0 ; atm < 6 ; atm++){
+                    function guess() {
+           const unum = document.getElementById("guessInput").value; 
+           const num = Number(unum);
+              const randomNumber = Math.floor(Math.random() * 10) + 1;
+           if (num < 1 || num > 10) {
+            document.getElementById("dill").innerHTML = "out of the range bro choose between 1 and 10.";
+            //    alert("you are out of range bro choose between 1 and 10.");
+              } else if (num === randomNumber) {
+                document.getElementById("dill").innerHTML = "Congratulation you win";
+            //    alert("Congratulations yoi guessed the correct number");
+              } else {
+                document.getElementById("dill").innerHTML = "Sorry, that's not correct ";
+            //    alert("Sorry, that's not correct. The correct number was");
+    }
+        }
+        document.getElementById("dill").innerHTML = " your number of trial is finished ";
+
+            }
+     
+    
+
+       
+  
+
+        </Script>
+</body>
+</html>
